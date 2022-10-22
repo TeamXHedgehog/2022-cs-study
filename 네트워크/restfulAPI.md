@@ -25,3 +25,23 @@ REST API는 아키텍처의 제약 조건을 지키는 api이다. 최초에는 h
 
 고성능 API에 대한 고민은 쿼리 조회가 복잡하지 않도록 소스 최적화, REST API의 결과를 캐싱 저장(스프링 3.1부터 제공) 등이 생각난다.
 ```
+
+```
+restful 구성
+- 자원 : url
+- 행위 : http method
+- 표현 
+
+- uniform interface 
+- stateless
+상태저장 x
+- 캐시가능
+http 가 가진 캐싱 기능이 적용된다. 
+- self-descriptiveness
+자체 표현 구조
+- client-server
+- 계층형 구조
+REST 서버는 다중 계층으로 구성될 수 있으며 보안, 로드 밸런싱, 암호화 계층을 추가해 구조상의 유연성을 둘 수 있다. 
+
+HATEOS : 클라이언트 요청에 대해 응답을 할 때, 추가적인 정보를 제공하는 링크를 포함할 수 있어야 한다.
+```
